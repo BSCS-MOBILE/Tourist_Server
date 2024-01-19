@@ -1,8 +1,12 @@
 const Mongoose = require('mongoose');
 
-const productSchema = new Mongoose.Schema({
+const touristSchema = new Mongoose.Schema({
     _id: Mongoose.Schema.Types.ObjectId,
-    productName: {
+    touristName: {
+        type: String,
+        required: true
+    },
+    description: {
         type: String,
         required: true
     },
@@ -18,6 +22,6 @@ const productSchema = new Mongoose.Schema({
     timestamps: true
 })
 
-productSchema.set('toJSON', { virtuals: true })
+touristSchema.set('toJSON', { virtuals: true })
 
-module.exports = Mongoose.model('product', productSchema);
+module.exports = Mongoose.model('tourist', touristSchema);

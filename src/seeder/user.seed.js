@@ -5,8 +5,10 @@ const User = require('../models/user.model');
 const UserService = require('../services/user.service')
 
 const users = [
-    {"firstName": "John", "lastName": "Doe", "email":"johndoe@email.com", "password": "password123"},
-    {"firstName": "Grace", "lastName": "Green", "email":"gracegreen@email.com", "password": "password123"}
+    {"firstName": "Mark Louie", "lastName": "Manrique", "email":"mark@email.com", "password": "mark123"},
+    {"firstName": "Patrick", "lastName": "Dela Cruz", "email":"patrick@email.com", "password": "patrick123"},
+    {"firstName": "Greggy Jay", "lastName": "Agcanas", "email":"greggy@email.com", "password": "greggy123"},
+    {"firstName": "John Karl", "lastName": "Nolasco", "email":"john@email.com", "password": "john123"}
 ];
 
 const UserSeeder = {
